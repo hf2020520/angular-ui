@@ -1,0 +1,15 @@
+<doc-view>
+  <ui-drop-down [open]="isOpen" (trigger)="isOpen = !isOpen" (escape)="isOpen = false">
+    <ui-drop-down-fixed>
+      <input type="text" readonly class="form-control" value="点我展开下拉框">
+    </ui-drop-down-fixed>
+    <ui-drop-down-menu>
+      <div class="list">
+        <a href="javascript:;" class="list-item">下拉列表1</a>
+        <a href="javascript:;" class="list-item">下拉列表2</a>
+        <a href="javascript:;" class="list-item">下拉列表3</a>
+      </div>
+    </ui-drop-down-menu>
+  </ui-drop-down>
+  <br><br><br><br><br>
+</doc-view>

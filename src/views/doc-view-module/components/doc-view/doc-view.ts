@@ -18,7 +18,7 @@ const md = markdownIt({
 });
 
 @Component({
-    selector: 'ui-doc-view',
+    selector: 'doc-view',
     templateUrl: './doc-view.html',
     styleUrls: ['./doc-view.css']
 })
@@ -42,7 +42,7 @@ export class DocViewComponent implements OnInit {
             const styleSheet = value.css || '';
             const ts = value.ts || '';
             let template = value.html || '';
-            template = template.replace(/^[\s\n]*<ui-doc-view>[\s\n]*|[\s\n]*<\/ui-doc-view>[\s\n]*$/g, '');
+            template = template.replace(/^[\s\n]*<doc-view>[\s\n]*|[\s\n]*<\/doc-view>[\s\n]*$/g, '');
             template = template.replace(/^\s\s/mg, '');
             this.isShowExample = styleSheet || template || ts;
             if (doc) {

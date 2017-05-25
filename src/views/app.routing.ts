@@ -18,7 +18,7 @@ export const routes: Routes = [{
     loadChildren() {
         return new Promise(resolve => {
             (require as any).ensure([], require => {
-                resolve(require('./components-example-module/components-example.module').ComponentsExampleModule);
+                resolve(require('./components-module/components.module').ComponentsModule);
             });
         });
     }
