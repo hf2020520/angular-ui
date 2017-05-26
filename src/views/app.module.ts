@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { UiComponentsModule } from 'tanbo-ui';
 
 import { AppComponent } from './app';
 import { routes } from './app.routing';
@@ -10,7 +11,8 @@ import { routes } from './app.routing';
     imports: [
         RouterModule.forRoot(routes),
         BrowserModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        UiComponentsModule
     ],
     declarations: [
         AppComponent,

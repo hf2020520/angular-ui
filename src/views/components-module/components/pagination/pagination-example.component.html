@@ -1,0 +1,53 @@
+<doc-view>
+  <h3>不同大小的分页</h3>
+  <div>
+    <ui-pagination class="pagination-xs"
+                   [currentPage]="currentPage"
+                   [pages]="pages"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+  <div>
+    <ui-pagination class="pagination-sm"
+                   [currentPage]="currentPage"
+                   [pages]="pages"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+  <div>
+    <ui-pagination [currentPage]="currentPage"
+                   [pages]="pages"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+  <div>
+    <ui-pagination class="pagination-lg"
+                   [currentPage]="currentPage"
+                   [pages]="pages"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+  <h3>不同长度的分页</h3>
+  <div>
+    <ui-pagination class="pagination-sm"
+                   [currentPage]="currentPage"
+                   [pages]="pages"
+                   [btnLength]="2"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+  <div>
+    <ui-pagination class="pagination-sm"
+                   [currentPage]="currentPage"
+                   [pages]="pages"
+                   [btnLength]="6"
+                   (change)="toPage($event)">
+
+    </ui-pagination>
+  </div>
+</doc-view>

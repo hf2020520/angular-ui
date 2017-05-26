@@ -1,4 +1,4 @@
-# drop-down 组件
+# drop-down 下拉框组件
 
 ## class
 可通过在`ui-drop-down`组件添加以下类名，来控制下拉框的显示位置。

@@ -10,6 +10,11 @@ import { NavComponent } from './components/nav.component';
 import { ConfirmExampleComponent } from './components/confirm/confirm-example.component';
 import { DropDownExampleComponent } from './components/drop-down/drop-down-example.component';
 import { NotifyExampleComponent } from './components/notify/notify-example.component';
+import { PaginationExampleComponent } from './components/pagination/pagination-example.component';
+import { SlideExampleComponent } from './components/slide/slide-example.component';
+import { StarrySkyExampleComponent } from './components/starry-sky/starry-sky-example.component';
+import { ToolbarExampleComponent } from './components/toolbar/toolbar-example.component';
+import { ViewLoadingBarExampleComponent } from './components/view-loading-bar/view-loading-bar-example.component';
 
 @NgModule({
     imports: [
@@ -22,7 +27,12 @@ import { NotifyExampleComponent } from './components/notify/notify-example.compo
         NavComponent,
         ConfirmExampleComponent,
         DropDownExampleComponent,
-        NotifyExampleComponent
+        NotifyExampleComponent,
+        PaginationExampleComponent,
+        SlideExampleComponent,
+        StarrySkyExampleComponent,
+        ToolbarExampleComponent,
+        ViewLoadingBarExampleComponent
     ],
     providers: [
         ConfirmService,

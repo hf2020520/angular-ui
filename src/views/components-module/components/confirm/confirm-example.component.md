@@ -1,2 +1,2 @@
-# confirm 组件
+# confirm 对话框组件
 
