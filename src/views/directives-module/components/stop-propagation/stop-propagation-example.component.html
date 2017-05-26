@@ -1,0 +1,7 @@
+<doc-view>
+  <div class="parent" (click)="parentHandle()">
+    parent
+    <button class="btn btn-default" type="button" uiStopPropagation (click)="childHandle()">点我不会冒泡</button>
+    <button class="btn btn-default" type="button" (click)="childHandle()">点我会冒泡</button>
+  </div>
+</doc-view>

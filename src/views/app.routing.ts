@@ -22,4 +22,13 @@ export const routes: Routes = [{
             });
         });
     }
+}, {
+    path: 'directives',
+    loadChildren() {
+        return new Promise(resolve => {
+            (require as any).ensure([], require => {
+                resolve(require('./directives-module/directives.module').DirectivesModule);
+            });
+        });
+    }
 }];

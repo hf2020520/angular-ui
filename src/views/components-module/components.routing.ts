@@ -9,6 +9,8 @@ import { SlideExampleComponent } from './components/slide/slide-example.componen
 import { StarrySkyExampleComponent } from './components/starry-sky/starry-sky-example.component';
 import { ToolbarExampleComponent } from './components/toolbar/toolbar-example.component';
 import { ViewLoadingBarExampleComponent } from './components/view-loading-bar/view-loading-bar-example.component';
+import { ConfirmServiceExampleComponent } from './components/confirm-service/confirm-service-example.component';
+import { NotifyServiceExampleComponent } from './components/notify-service/notify-service-example.component';
 
 export const routes: Routes = [{
     path: '',
@@ -78,6 +80,18 @@ export const routes: Routes = [{
             ts: require('!!raw-loader!./components/view-loading-bar/view-loading-bar-example.component'),
             html: require('./components/view-loading-bar/view-loading-bar-example.component.html'),
             doc: require('./components/view-loading-bar/view-loading-bar-example.component.md')
+        }
+    }, {
+        path: 'confirm-service',
+        component: ConfirmServiceExampleComponent,
+        data: {
+            doc: require('./components/confirm-service/confirm-service-example.component.md')
+        }
+    }, {
+        path: 'notify-service',
+        component: NotifyServiceExampleComponent,
+        data: {
+            doc: require('./components/notify-service/notify-service-example.component.md')
         }
     }]
 }];
