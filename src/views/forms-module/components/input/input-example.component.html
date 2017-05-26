@@ -1,0 +1,43 @@
+<doc-view>
+  <h3>type="radio"</h3>
+  <p>{{radio}}</p>
+  <p>
+    <ui-input [(ngModel)]="radio" value="radio1" type="radio" name="radio"></ui-input>
+    <ui-input [(ngModel)]="radio" value="radio2" class="primary" type="radio" name="radio"></ui-input>
+    <ui-input [(ngModel)]="radio" value="radio3" class="info" type="radio" name="radio"></ui-input>
+    <ui-input [(ngModel)]="radio" value="radio4" class="success" type="radio" name="radio"></ui-input>
+    <ui-input [(ngModel)]="radio" value="radio5" class="warning" type="radio" name="radio"></ui-input>
+    <ui-input [(ngModel)]="radio" value="radio6" class="danger" type="radio" name="radio"></ui-input>
+  </p>
+  <h3>type="checkbox"</h3>
+  <p>
+    <ui-input [(ngModel)]="checkbox1" type="checkbox" name="checkbox1"></ui-input>
+    {{checkbox1}}
+    <ui-input [(ngModel)]="checkbox2" class="primary" type="checkbox" name="checkbox2"></ui-input>
+    {{checkbox2}}
+    <ui-input [(ngModel)]="checkbox3" class="info" type="checkbox" name="checkbox3"></ui-input>
+    {{checkbox3}}
+    <ui-input [(ngModel)]="checkbox4" class="success" type="checkbox" name="checkbox4"></ui-input>
+    {{checkbox4}}
+    <ui-input [(ngModel)]="checkbox5" class="warning" type="checkbox" name="checkbox5"></ui-input>
+    {{checkbox5}}
+    <ui-input [(ngModel)]="checkbox6" class="danger" type="checkbox" name="checkbox6"></ui-input>
+    {{checkbox6}}
+  </p>
+
+  <h3>type="range"</h3>
+  <div>{{range}}</div>
+  <p>
+    <ui-input type="range" name="range" [(ngModel)]="range"></ui-input>
+    <br>
+    <ui-input class="primary" type="range" name="range" [(ngModel)]="range"></ui-input>
+    <br>
+    <ui-input class="info" type="range" name="range" [(ngModel)]="range"></ui-input>
+    <br>
+    <ui-input class="success" type="range" name="range" [(ngModel)]="range"></ui-input>
+    <br>
+    <ui-input class="warning" type="range" name="range" [(ngModel)]="range"></ui-input>
+    <br>
+    <ui-input class="danger" type="range" name="range" [(ngModel)]="range"></ui-input>
+  </p>
+</doc-view>

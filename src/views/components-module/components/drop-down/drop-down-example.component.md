@@ -8,10 +8,10 @@
 
 | 输入属性名 | 输入类型  | 说明    |
 | --        | --        | --        |
-| open      | boolean   | 用于控制`ui-drop-down-menu`是否显示 |
+| `open`      | `boolean`   | 用于控制`ui-drop-down-menu`是否显示 |
 
 ## @Output()
 | 输出属性名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| trigger | void   | 当`ui-drop-down-fixed`点击时的回调 |
-| escape | void   | 当`ui-drop-down`失去焦点时的回调 |
+| `trigger` | `void`   | 当`ui-drop-down-fixed`点击时的回调 |
+| `escape` | `void`   | 当`ui-drop-down`失去焦点时的回调 |

@@ -8,11 +8,11 @@
 
 | 输入属性名 | 输入类型  | 说明    |
 | --        | --        | --        |
-| currentPage      | number   | 当前页 |
-| pages      | number   | 总共有多少页 |
-| btnLength      | number   | 控件按扭个数 |
+| `currentPage`      | `number`   | 当前页 |
+| `pages`      | `number`   | 总共有多少页 |
+| `btnLength`      | `number`   | 控件按扭个数 |
 
 ## @Output()
 | 输出属性名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| change | number   | 当`ui-pagination`页码被用户点击时的回调 |
+| `change` | `number`   | 当`ui-pagination`页码被用户点击时的回调 |

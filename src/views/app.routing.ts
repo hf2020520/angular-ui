@@ -31,4 +31,13 @@ export const routes: Routes = [{
             });
         });
     }
+}, {
+    path: 'forms',
+    loadChildren() {
+        return new Promise(resolve => {
+            (require as any).ensure([], require => {
+                resolve(require('./forms-module/forms.module').FormModule);
+            });
+        });
+    }
 }];
