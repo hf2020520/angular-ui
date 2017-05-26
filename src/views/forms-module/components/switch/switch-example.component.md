@@ -10,7 +10,7 @@
 | `readonly`      | `boolean`   |  |
 | `checked`      | `boolean`   |  |
 
-### @Output()
+## @Output()
 | 输出属性名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
 | `change` | `string`   | 当前组件的是否选中 |
