@@ -12,6 +12,7 @@ import { NavComponent } from './components/nav.component';
 import { ButtonExampleComponent } from './components/button/button-example.component';
 import { InputExampleComponent } from './components/input/input-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
+import { SwitchExampleComponent } from './components/switch/switch-example.component';
 
 @NgModule({
     imports: [
@@ -25,7 +26,8 @@ import { SelectExampleComponent } from './components/select/select-example.compo
         NavComponent,
         ButtonExampleComponent,
         InputExampleComponent,
-        SelectExampleComponent
+        SelectExampleComponent,
+        SwitchExampleComponent
     ]
 })
 export class FormModule {
