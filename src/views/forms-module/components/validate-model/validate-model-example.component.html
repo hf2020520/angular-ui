@@ -1,0 +1,37 @@
+<doc-view>
+  <p>当获取验证码时，需要先校验手机号码</p>
+  <form novalidate [uiValidateForm]="form" #form="ngForm" (ngSubmit)="submit()">
+    <div>
+      手机号码： <input type="text"
+                   class="form-control"
+                   #mobilePhone="ngModel"
+                   [(ngModel)]="data.mobilePhone"
+                   required
+                   minlength="3"
+                   name="name">
+      <p class="color-danger" *ngIf="mobilePhone.errors && (mobilePhone.dirty || mobilePhone.touched)">
+        <span *ngIf="mobilePhone.errors.required">必填项不能为空</span>
+        <span *ngIf="mobilePhone.errors.minlength">至少输入3个字符</span>
+      </p>
+    </div>
+    <p>
+      <button class="btn btn-primary" type="button" [uiValidateModel]="mobilePhone">点击获取验证码</button>
+    </p>
+    <div>
+      密码： <input type="text"
+                 class="form-control"
+                 #verifyCode="ngModel"
+                 [(ngModel)]="data.verifyCode"
+                 required
+                 minlength="8"
+                 name="verifyCode">
+      <p class="color-danger" *ngIf="verifyCode.errors && (verifyCode.dirty || verifyCode.touched)">
+        <span *ngIf="verifyCode.errors.required">必填项不能为空</span>
+        <span *ngIf="verifyCode.errors.minlength">至少输入8个字符</span>
+      </p>
+    </div>
+    <p>
+      <button type="submit" class="btn btn-primary">提交</button>
+    </p>
+  </form>
+</doc-view>

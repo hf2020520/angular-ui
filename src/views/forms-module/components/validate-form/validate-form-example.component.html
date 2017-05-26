@@ -1,0 +1,33 @@
+<doc-view>
+  <form novalidate [uiValidateForm]="form" #form="ngForm" (ngSubmit)="submit()">
+    <div>
+      姓名： <input type="text"
+                 class="form-control"
+                 #name="ngModel"
+                 [(ngModel)]="data.name"
+                 required
+                 minlength="3"
+                 name="name">
+      <p class="color-danger" *ngIf="name.errors && (name.dirty || name.touched)">
+        <span *ngIf="name.errors.required">必填项不能为空</span>
+        <span *ngIf="name.errors.minlength">至少输入3个字符</span>
+      </p>
+    </div>
+    <div>
+      密码： <input type="text"
+                 class="form-control"
+                 #password="ngModel"
+                 [(ngModel)]="data.password"
+                 required
+                 minlength="8"
+                 name="password">
+      <p class="color-danger" *ngIf="password.errors && (password.dirty || password.touched)">
+        <span *ngIf="password.errors.required">必填项不能为空</span>
+        <span *ngIf="password.errors.minlength">至少输入8个字符</span>
+      </p>
+    </div>
+    <p>
+      <button type="submit" class="btn btn-primary">提交</button>
+    </p>
+  </form>
+</doc-view>

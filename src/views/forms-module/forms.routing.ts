@@ -5,6 +5,8 @@ import { ButtonExampleComponent } from './components/button/button-example.compo
 import { InputExampleComponent } from './components/input/input-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
+import { ValidateFormExampleComponent } from './components/validate-form/validate-form-example.component';
+import { ValidateModelExampleComponent } from './components/validate-model/validate-model-example.component';
 
 export const routes: Routes = [{
     path: '',
@@ -40,6 +42,22 @@ export const routes: Routes = [{
             ts: require('!!raw-loader!./components/switch/switch-example.component'),
             html: require('./components/switch/switch-example.component.html'),
             doc: require('./components/switch/switch-example.component.md')
+        }
+    }, {
+        path: 'validate-form',
+        component: ValidateFormExampleComponent,
+        data: {
+            ts: require('!!raw-loader!./components/validate-form/validate-form-example.component'),
+            html: require('./components/validate-form/validate-form-example.component.html'),
+            doc: require('./components/validate-form/validate-form-example.component.md')
+        }
+    }, {
+        path: 'validate-model',
+        component: ValidateModelExampleComponent,
+        data: {
+            ts: require('!!raw-loader!./components/validate-model/validate-model-example.component'),
+            html: require('./components/validate-model/validate-model-example.component.html'),
+            doc: require('./components/validate-model/validate-model-example.component.md')
         }
     }]
 }];

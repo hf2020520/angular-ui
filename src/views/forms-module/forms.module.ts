@@ -13,6 +13,8 @@ import { ButtonExampleComponent } from './components/button/button-example.compo
 import { InputExampleComponent } from './components/input/input-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
+import { ValidateFormExampleComponent } from './components/validate-form/validate-form-example.component';
+import { ValidateModelExampleComponent } from './components/validate-model/validate-model-example.component';
 
 @NgModule({
     imports: [
@@ -27,7 +29,9 @@ import { SwitchExampleComponent } from './components/switch/switch-example.compo
         ButtonExampleComponent,
         InputExampleComponent,
         SelectExampleComponent,
-        SwitchExampleComponent
+        SwitchExampleComponent,
+        ValidateFormExampleComponent,
+        ValidateModelExampleComponent
     ]
 })
 export class FormModule {
