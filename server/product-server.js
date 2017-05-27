@@ -5,7 +5,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-const appPort = '1234';
+const appPort = '3389';
 const appBasePath = path.resolve(__dirname, '../dist/');
 
 

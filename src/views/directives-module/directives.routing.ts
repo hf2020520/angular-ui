@@ -11,7 +11,7 @@ export const routes: Routes = [{
         component: StopPropagationExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/stop-propagation/stop-propagation-example.component'),
-            html: require('./components/stop-propagation/stop-propagation-example.component.html'),
+            html: require('!!raw-loader!./components/stop-propagation/stop-propagation-example.component.html'),
             doc: require('./components/stop-propagation/stop-propagation-example.component.md')
         }
     }]

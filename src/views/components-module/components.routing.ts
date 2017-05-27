@@ -20,7 +20,7 @@ export const routes: Routes = [{
         component: ConfirmExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/confirm/confirm-example.component'),
-            html: require('./components/confirm/confirm-example.component.html'),
+            html: require('!!raw-loader!./components/confirm/confirm-example.component.html'),
             doc: require('./components/confirm/confirm-example.component.md')
         }
     }, {
@@ -28,7 +28,7 @@ export const routes: Routes = [{
         component: DropDownExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/drop-down/drop-down-example.component'),
-            html: require('./components/drop-down/drop-down-example.component.html'),
+            html: require('!!raw-loader!./components/drop-down/drop-down-example.component.html'),
             doc: require('./components/drop-down/drop-down-example.component.md')
         }
     }, {
@@ -36,7 +36,7 @@ export const routes: Routes = [{
         component: NotifyExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/notify/notify-example.component'),
-            html: require('./components/notify/notify-example.component.html'),
+            html: require('!!raw-loader!./components/notify/notify-example.component.html'),
             doc: require('./components/notify/notify-example.component.md')
         }
     }, {
@@ -44,7 +44,7 @@ export const routes: Routes = [{
         component: PaginationExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/pagination/pagination-example.component'),
-            html: require('./components/pagination/pagination-example.component.html'),
+            html: require('!!raw-loader!./components/pagination/pagination-example.component.html'),
             doc: require('./components/pagination/pagination-example.component.md')
         }
     }, {
@@ -52,7 +52,7 @@ export const routes: Routes = [{
         component: SlideExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/slide/slide-example.component'),
-            html: require('./components/slide/slide-example.component.html'),
+            html: require('!!raw-loader!./components/slide/slide-example.component.html'),
             doc: require('./components/slide/slide-example.component.md'),
             css: require('!!raw-loader!./components/slide/slide-example.component.scss')
         }
@@ -61,7 +61,7 @@ export const routes: Routes = [{
         component: StarrySkyExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/starry-sky/starry-sky-example.component'),
-            html: require('./components/starry-sky/starry-sky-example.component.html'),
+            html: require('!!raw-loader!./components/starry-sky/starry-sky-example.component.html'),
             doc: require('./components/starry-sky/starry-sky-example.component.md'),
             css: require('!!raw-loader!./components/starry-sky/starry-sky-example.component.scss')
         }
@@ -70,7 +70,7 @@ export const routes: Routes = [{
         component: ToolbarExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/toolbar/toolbar-example.component'),
-            html: require('./components/toolbar/toolbar-example.component.html'),
+            html: require('!!raw-loader!./components/toolbar/toolbar-example.component.html'),
             doc: require('./components/toolbar/toolbar-example.component.md')
         }
     }, {
@@ -78,7 +78,7 @@ export const routes: Routes = [{
         component: ViewLoadingBarExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/view-loading-bar/view-loading-bar-example.component'),
-            html: require('./components/view-loading-bar/view-loading-bar-example.component.html'),
+            html: require('!!raw-loader!./components/view-loading-bar/view-loading-bar-example.component.html'),
             doc: require('./components/view-loading-bar/view-loading-bar-example.component.md')
         }
     }, {

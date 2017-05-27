@@ -16,7 +16,7 @@ export const routes: Routes = [{
         component: ButtonExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/button/button-example.component'),
-            html: require('./components/button/button-example.component.html'),
+            html: require('!!raw-loader!./components/button/button-example.component.html'),
             doc: require('./components/button/button-example.component.md')
         }
     }, {
@@ -24,7 +24,7 @@ export const routes: Routes = [{
         component: InputExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/input/input-example.component'),
-            html: require('./components/input/input-example.component.html'),
+            html: require('!!raw-loader!./components/input/input-example.component.html'),
             doc: require('./components/input/input-example.component.md')
         }
     }, {
@@ -32,7 +32,7 @@ export const routes: Routes = [{
         component: SelectExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/select/select-example.component'),
-            html: require('./components/select/select-example.component.html'),
+            html: require('!!raw-loader!./components/select/select-example.component.html'),
             doc: require('./components/select/select-example.component.md')
         }
     }, {
@@ -40,7 +40,7 @@ export const routes: Routes = [{
         component: SwitchExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/switch/switch-example.component'),
-            html: require('./components/switch/switch-example.component.html'),
+            html: require('!!raw-loader!./components/switch/switch-example.component.html'),
             doc: require('./components/switch/switch-example.component.md')
         }
     }, {
@@ -48,7 +48,7 @@ export const routes: Routes = [{
         component: ValidateFormExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/validate-form/validate-form-example.component'),
-            html: require('./components/validate-form/validate-form-example.component.html'),
+            html: require('!!raw-loader!./components/validate-form/validate-form-example.component.html'),
             doc: require('./components/validate-form/validate-form-example.component.md')
         }
     }, {
@@ -56,7 +56,7 @@ export const routes: Routes = [{
         component: ValidateModelExampleComponent,
         data: {
             ts: require('!!raw-loader!./components/validate-model/validate-model-example.component'),
-            html: require('./components/validate-model/validate-model-example.component.html'),
+            html: require('!!raw-loader!./components/validate-model/validate-model-example.component.html'),
             doc: require('./components/validate-model/validate-model-example.component.md')
         }
     }]
