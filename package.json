@@ -10,7 +10,7 @@
     "pack": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config config/webpack.prod.js --progress --profile --bail --optimize-minimize",
-    "product": "npm i && npm run build && sudo forever start server/product-server.js"
+    "product": "npm i --registry=http://registry.npm.taobao.org && npm run build && sudo forever start server/product-server.js"
   },
   "keywords": [
     "angular2",
