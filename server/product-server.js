@@ -15,10 +15,4 @@ app.use(favicon('/favicon.ico'));
 
 app.use(express.static(appBasePath));
 
-app.listen(appPort, ip.address(), error => {
-    if (error) {
-        console.log(error);
-        return;
-    }
-    console.log('http://' + ip.address() + ':' + appPort);
-});
+app.listen(appPort);
