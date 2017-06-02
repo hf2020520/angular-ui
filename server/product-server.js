@@ -1,6 +1,5 @@
 const historyApiFallback = require("connect-history-api-fallback");
 const favicon = require('express-favicon');
-const ip = require('ip');
 const path = require('path');
 const express = require('express');
 const app = express();
