@@ -21,8 +21,5 @@
   <div [ngClass]="{active: showType === 'html'}" [innerHTML]="templateHtml"></div>
   <div *ngIf="styleSheetHtml" [ngClass]="{active: showType === 'styleSheet'}" [innerHTML]="styleSheetHtml"></div>
 </div>
-<div *ngIf="docHtml">
-  <h3>文档详情</h3>
-</div>
 <div *ngIf="docHtml" class="markdown-doc" [innerHTML]="docHtml"></div>
 <br><br>
