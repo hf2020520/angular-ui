@@ -1,3 +1,25 @@
+@import "~tanbo-ui/bundles/assets/scss/varibles";
+
+.btns {
+    text-align: center;
+    border-bottom: 1px solid $color-light;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    a {
+        text-decoration: none;
+        color: $color-default;
+        padding: 15px 20px;
+        &:hover {
+            color: $color-primary;
+        }
+        &.active {
+            color: $color-primary;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+}
+
 .code-demo ul {
     line-height: 36px;
     height: 40px;

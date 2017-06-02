@@ -20,7 +20,7 @@ const md = markdownIt({
 @Component({
     selector: 'doc-view',
     templateUrl: './doc-view.html',
-    styleUrls: ['./doc-view.css']
+    styleUrls: ['./doc-view.scss']
 })
 export class DocViewComponent implements OnInit {
     showType: string = 'example';

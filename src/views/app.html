@@ -1,18 +1,41 @@
 <ui-view-loading-bar></ui-view-loading-bar>
-<header class="container-fluid">
-  <h1 class="brand pull-left">TanBo-UI</h1>
-  <div class="header-nav pull-left">
-    <ul class="clearfix list-unstyled">
-      <li class="pull-left"><a routerLinkActive="active" routerLink="base-info" href="javascript:;">简介</a></li>
-      <li class="pull-left"><a routerLinkActive="active" routerLink="components" href="javascript:;">UiComponentsModule</a></li>
-      <li class="pull-left"><a routerLinkActive="active" routerLink="directives" href="javascript:;">UiDirectivesModule</a></li>
-      <li class="pull-left"><a routerLinkActive="active" routerLink="forms" href="javascript:;">UiFormsModule</a></li>
-    </ul>
-  </div>
-  <div class="pull-right color-info">
-    当前版本：1.1.10
+<header>
+  <div class="container">
+    <h1 class="brand pull-left">TanBo-UI</h1>
+    <div class="pull-left">1.2.1</div>
+    <div class="header-nav pull-right">
+      <ul class="clearfix list-unstyled">
+        <li class="pull-left">
+          <a routerLinkActive="active" routerLink="base-info" href="javascript:;">
+            <span class="icon icon-home"></span>
+            简介</a>
+        </li>
+        <li class="pull-left"><a routerLinkActive="active" routerLink="components"
+                                 href="javascript:;">
+          <span class="icon icon-embed2"></span>
+          组件</a>
+        </li>
+        <li class="pull-left"><a routerLinkActive="active" routerLink="directives"
+                                 href="javascript:;">
+          <span class="icon icon-terminal"></span>
+          指令</a></li>
+        <li class="pull-left"><a routerLinkActive="active" routerLink="forms" href="javascript:;">
+          <span class="icon icon-list"></span>
+          表单</a></li>
+      </ul>
+    </div>
   </div>
 </header>
-<div class="view-container">
-  <router-outlet></router-outlet>
+<div class="page">
+  <div class="view-container page-content">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
+<div class="footer">
+  <div class="container">
+    备案号：543653543
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+@import "~tanbo-ui/bundles/assets/scss/varibles";
+@import "../varibles";
+
+html, body {
+    height: 100%;
+    font-size: 14px;
+}
+
+body .page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: $footer-height * -1;
+    //.header {
+    //    height: $header-height;
+    //    position: relative;
+    //    z-index: 1000;
+    //}
+    .page-content {
+        padding-bottom: $footer-height;
+    }
+}
+
+.footer {
+    position: relative;
+    height: $footer-height;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.left-nav {
+    border-right: 1px solid $color-gray-light;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    > .list-group {
+        padding-bottom: 4em;
+    }
+}
+
+.right-content {
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.page-content {
+    overflow: hidden;
+}
