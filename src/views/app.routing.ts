@@ -2,7 +2,23 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [{
     path: '',
-    redirectTo: '/base-info',
+    redirectTo: '/base-info/intro',
+    pathMatch: 'full'
+}, {
+    path: 'base-info',
+    redirectTo: '/base-info/intro',
+    pathMatch: 'full'
+}, {
+    path: 'components',
+    redirectTo: '/components/confirm',
+    pathMatch: 'full'
+}, {
+    path: 'directives',
+    redirectTo: 'directives/stop-propagation',
+    pathMatch: 'full'
+}, {
+    path: 'forms',
+    redirectTo: 'forms/button',
     pathMatch: 'full'
 }, {
     path: 'base-info',
