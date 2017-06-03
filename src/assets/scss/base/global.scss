@@ -34,14 +34,19 @@ body {
     border-right: 1px solid $color-gray-light;
     padding-bottom: 9999px;
     margin-bottom: -9999px;
+    background-color: rgba(255, 255, 255, .3);
     > .list-group {
         padding-bottom: 4em;
+    }
+    .list-item {
+        background: none;
     }
 }
 
 .right-content {
     padding-bottom: 9999px;
     margin-bottom: -9999px;
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .page-content {
