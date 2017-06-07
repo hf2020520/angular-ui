@@ -5,6 +5,7 @@ import { AppModule } from './views/app.module';
 import 'highlight.js/styles/github.css';
 import './assets/scss/index.scss';
 import 'tanbo-ui/bundles/tanbo-ui.min.css';
+import 'tanbo-ui/bundles/tanbo-ui-native.min.css';
 
 if (process.env.ENV === 'production') {
     enableProdMode();

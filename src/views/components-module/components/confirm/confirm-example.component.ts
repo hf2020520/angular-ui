@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ConfirmService, ConfirmConfig } from 'tanbo-ui';
+import { ConfirmController, ConfirmConfig } from 'tanbo-ui';
 
 @Component({
     templateUrl: './confirm-example.component.html'
 })
 export class ConfirmExampleComponent {
-    constructor(private confirmService: ConfirmService) {
+    constructor(private confirmService: ConfirmController) {
     }
 
     show() {

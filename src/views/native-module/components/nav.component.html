@@ -1,6 +1,6 @@
 <div class="row page-content">
   <div class="col-md-2 left-nav">
-    <h3>UiFormsModule</h3>
+    <h3>UiNativeModule</h3>
     <div class="list-group row">
       <h4 class="list-title">组件</h4>
       <div class="list">
@@ -9,7 +9,14 @@
         <a href="javascript:;" routerLink="./select" routerLinkActive="active" class="list-item">ui-select</a>
         <a href="javascript:;" routerLink="./switch" routerLinkActive="active" class="list-item">ui-switch</a>
       </div>
-      <h4 class="list-title">指令</h4>
+      <h4 class="list-title">服务</h4>
+      <div class="list">
+        <a href="javascript:;" routerLink="./validate-form" routerLinkActive="active"
+           class="list-item">uiValidateForm</a>
+        <a href="javascript:;" routerLink="./validate-model" routerLinkActive="active"
+           class="list-item">uiValidateModel</a>
+      </div>
+      <h4 class="list-title">生命周期</h4>
       <div class="list">
         <a href="javascript:;" routerLink="./validate-form" routerLinkActive="active"
            class="list-item">uiValidateForm</a>
@@ -18,7 +25,11 @@
       </div>
     </div>
   </div>
-  <div class="col-md-10 right-content">
+  <div class="col-md-6 right-content">
     <router-outlet></router-outlet>
+  </div>
+  <div class="col-md-4" style="float: right">
+    <br>
+    <native-demo></native-demo>
   </div>
 </div>

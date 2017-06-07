@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NotifyService, NotifyConfig, NotifyType } from 'tanbo-ui';
+import { NotifyController, NotifyConfig, NotifyType } from 'tanbo-ui';
 
 @Component({
     templateUrl: './notify-example.component.html'
 })
 export class NotifyExampleComponent {
-    constructor(private notifyService: NotifyService) {
+    constructor(private notifyService: NotifyController) {
     }
 
     show() {

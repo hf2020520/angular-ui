@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DocViewModule } from '../doc-view-module/doc-view.module';
-import { UiComponentsModule, ConfirmService, NotifyService } from 'tanbo-ui';
+import { UiComponentsModule } from 'tanbo-ui';
 
 import { routes } from './components.routing';
 
@@ -37,10 +37,6 @@ import { NotifyServiceExampleComponent } from './components/notify-service/notif
         ViewLoadingBarExampleComponent,
         ConfirmServiceExampleComponent,
         NotifyServiceExampleComponent
-    ],
-    providers: [
-        ConfirmService,
-        NotifyService
     ]
 })
 export class ComponentsModule {

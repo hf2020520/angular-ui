@@ -56,4 +56,13 @@ export const routes: Routes = [{
             });
         });
     }
+}, {
+    path: 'native',
+    loadChildren() {
+        return new Promise(resolve => {
+            (require as any).ensure([], require => {
+                resolve(require('./native-module/native.module').NativeModule);
+            });
+        });
+    }
 }];
