@@ -5,7 +5,7 @@ import { NotifyController, NotifyConfig, NotifyType } from 'tanbo-ui';
     templateUrl: './notify-example.component.html'
 })
 export class NotifyExampleComponent {
-    constructor(private notifyService: NotifyController) {
+    constructor(private notifyController: NotifyController) {
     }
 
     show() {
@@ -15,6 +15,6 @@ export class NotifyExampleComponent {
             type: NotifyType.Primary, // 可选，显示风格
             time: 5000 // 可选，停留时间，如果autoHide为false，则此项不生效
         };
-        this.notifyService.push(config);
+        this.notifyController.push(config);
     }
 }

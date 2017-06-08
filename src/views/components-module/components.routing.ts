@@ -9,8 +9,8 @@ import { SlideExampleComponent } from './components/slide/slide-example.componen
 import { StarrySkyExampleComponent } from './components/starry-sky/starry-sky-example.component';
 import { ToolbarExampleComponent } from './components/toolbar/toolbar-example.component';
 import { ViewLoadingBarExampleComponent } from './components/view-loading-bar/view-loading-bar-example.component';
-import { ConfirmServiceExampleComponent } from './components/confirm-service/confirm-service-example.component';
-import { NotifyServiceExampleComponent } from './components/notify-service/notify-service-example.component';
+import { ConfirmServiceExampleComponent } from './components/confirm-controller/confirm-controller-example.component';
+import { NotifyServiceExampleComponent } from './components/notify-controller/notify-controller-example.component';
 
 export const routes: Routes = [{
     path: '',
@@ -82,16 +82,16 @@ export const routes: Routes = [{
             doc: require('./components/view-loading-bar/view-loading-bar-example.component.md')
         }
     }, {
-        path: 'confirm-service',
+        path: 'confirm-controller',
         component: ConfirmServiceExampleComponent,
         data: {
-            doc: require('./components/confirm-service/confirm-service-example.component.md')
+            doc: require('./components/confirm-controller/confirm-controller-example.component.md')
         }
     }, {
-        path: 'notify-service',
+        path: 'notify-controller',
         component: NotifyServiceExampleComponent,
         data: {
-            doc: require('./components/notify-service/notify-service-example.component.md')
+            doc: require('./components/notify-controller/notify-controller-example.component.md')
         }
     }]
 }];

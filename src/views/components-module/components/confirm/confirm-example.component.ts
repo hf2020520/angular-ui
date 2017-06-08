@@ -5,7 +5,7 @@ import { ConfirmController, ConfirmConfig } from 'tanbo-ui';
     templateUrl: './confirm-example.component.html'
 })
 export class ConfirmExampleComponent {
-    constructor(private confirmService: ConfirmController) {
+    constructor(private confirmController: ConfirmController) {
     }
 
     show() {
@@ -13,7 +13,7 @@ export class ConfirmExampleComponent {
             title: '系统提示',
             content: '你触发了对话框'
         };
-        this.confirmService.show(config).then(() => {
+        this.confirmController.show(config).then(() => {
             alert('你确认了操作');
         }, () => {
             alert('你取消了操作');

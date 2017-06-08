@@ -15,8 +15,8 @@ import { SlideExampleComponent } from './components/slide/slide-example.componen
 import { StarrySkyExampleComponent } from './components/starry-sky/starry-sky-example.component';
 import { ToolbarExampleComponent } from './components/toolbar/toolbar-example.component';
 import { ViewLoadingBarExampleComponent } from './components/view-loading-bar/view-loading-bar-example.component';
-import { ConfirmServiceExampleComponent } from './components/confirm-service/confirm-service-example.component';
-import { NotifyServiceExampleComponent } from './components/notify-service/notify-service-example.component';
+import { ConfirmServiceExampleComponent } from './components/confirm-controller/confirm-controller-example.component';
+import { NotifyServiceExampleComponent } from './components/notify-controller/notify-controller-example.component';
 
 @NgModule({
     imports: [

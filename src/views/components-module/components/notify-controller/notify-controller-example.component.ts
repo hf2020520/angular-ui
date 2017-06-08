@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './notify-service-example.component.html'
+    templateUrl: './notify-controller-example.component.html'
 })
 export class NotifyServiceExampleComponent {
 }
