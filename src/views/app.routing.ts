@@ -21,6 +21,10 @@ export const routes: Routes = [{
     redirectTo: 'forms/button',
     pathMatch: 'full'
 }, {
+    path: 'native',
+    redirectTo: 'native/intro',
+    pathMatch: 'full'
+}, {
     path: 'base-info',
     loadChildren() {
         return new Promise(resolve => {

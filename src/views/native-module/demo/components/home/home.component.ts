@@ -24,6 +24,6 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         this.pageTransferStationService.component$.subscribe((config: ViewConfig) => {
             this.navController.push(config.component);
-        })
+        });
     }
 }

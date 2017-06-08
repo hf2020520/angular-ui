@@ -9,9 +9,10 @@ import { NotifyController } from 'tanbo-ui';
 export class AppComponent {
     constructor(private notify: NotifyController) {
     }
-    show(){
+
+    show() {
         this.notify.push({
             content: 'tset'
-        })
+        });
     }
 }

@@ -13,15 +13,16 @@ npm install tanbo-ui --save
 ## 在你的项目中引入tanbo-ui
 
 ```typescript
-// 这里是依赖的样式表，你也可以直接通过link标签引入
-// 如果你想自定义样式，你可以通过taobo-ui提供的scss源文件来修改其中的样式
-// scss文件目录 node_modules/tanbo-ui/bundles/assets/scss/
-
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UiFormsModule, UiDirectivesModule, UiComponentsModule, ConfirmService, NotifyService } from 'tanbo-ui';
+import { UiFormsModule, UiDirectivesModule, UiComponentsModule } from 'tanbo-ui';
+
+// 这里是依赖的样式表，你也可以直接通过link标签引入
+// 如果你想自定义样式，你可以通过taobo-ui提供的scss源文件来修改其中的样式
+// scss文件目录 node_modules/tanbo-ui/bundles/assets/scss/
+
 import 'tanbo-ui/bundles/tanbo-ui.min.css'; 
 
 
@@ -34,10 +35,6 @@ import 'tanbo-ui/bundles/tanbo-ui.min.css';
         FormsModule, // FormsModule 一定要在 UiFormsModule 之后
         BrowserModule,
         BrowserAnimationsModule // UiComponentsModule 依赖动画模块
-    ],
-    providers: [
-        ConfirmService,
-        NotifyService
     ]
 })
 
