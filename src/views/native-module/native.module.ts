@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { UiNativeModule } from 'tanbo-ui';
 
 import { routes } from './native.routing';
+import { PageTransferStationService } from './services/page-transfer-station.service';
 
 import { NavComponent } from './components/nav.component';
 
@@ -14,6 +15,8 @@ import { Child2Component } from './demo/components/tab1/child2/child2.component'
 import { Tab2Component } from './demo/components/tab2/tab2.component';
 import { Tab3Component } from './demo/components/tab3/tab3.component';
 import { Tab4Component } from './demo/components/tab4/tab4.component';
+import { DetailComponent } from './demo/components/detail/detail.component';
+import { ListComponent } from './demo/components/list/list.component';
 
 @NgModule({
     imports: [
@@ -30,6 +33,8 @@ import { Tab4Component } from './demo/components/tab4/tab4.component';
         Tab2Component,
         Tab3Component,
         Tab4Component,
+        ListComponent,
+        DetailComponent
     ],
     entryComponents: [
         HomeComponent,
@@ -38,7 +43,12 @@ import { Tab4Component } from './demo/components/tab4/tab4.component';
         Child2Component,
         Tab2Component,
         Tab3Component,
-        Tab4Component
+        Tab4Component,
+        ListComponent,
+        DetailComponent
+    ],
+    providers: [
+        PageTransferStationService
     ]
 })
 export class NativeModule {
