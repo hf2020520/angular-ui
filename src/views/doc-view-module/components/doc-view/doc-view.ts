@@ -54,7 +54,6 @@ export class DocViewComponent implements OnInit {
                     }
                     return md.render(item);
                 }).join('');
-                debugger;
             }
             if (styleSheet) {
                 this.styleSheetHtml = md.render('```scss\n' + styleSheet + '\n```');
