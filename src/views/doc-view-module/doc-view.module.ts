@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocViewComponent } from './components/doc-view/doc-view';
+import { HtmlDirective } from './directives/html';
 @NgModule({
     imports: [
         CommonModule
     ],
     declarations: [
-        DocViewComponent
+        DocViewComponent,
+        HtmlDirective
     ],
     exports: [
-        DocViewComponent
+        DocViewComponent,
+        HtmlDirective
     ]
 })
 export class DocViewModule {

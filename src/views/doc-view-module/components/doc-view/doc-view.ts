@@ -46,7 +46,15 @@ export class DocViewComponent implements OnInit {
             template = template.replace(/^\s\s/mg, '');
             this.isShowExample = styleSheet || template || ts;
             if (doc) {
-                this.docHtml = md.render(doc);
+                let docs = doc.split('````');
+
+                this.docHtml = docs.map(item => {
+                    if (item.indexOf('html\n') === 0) {
+                        return item.replace(/^html\n/, '');
+                    }
+                    return md.render(item);
+                }).join('');
+                debugger;
             }
             if (styleSheet) {
                 this.styleSheetHtml = md.render('```scss\n' + styleSheet + '\n```');

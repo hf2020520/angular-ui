@@ -33,24 +33,28 @@ export const routes: Routes = [{
         component: ButtonsComponent,
         data: {
             html: require('!!raw-loader!./components/buttons/buttons.component.html'),
+            doc: require('./components/buttons/buttons.component.md')
         }
     }, {
         path: 'color',
         component: ColorComponent,
         data: {
-            html: require('!!raw-loader!./components/color/color.component.html')
+            html: require('!!raw-loader!./components/color/color.component.html'),
+            doc: require('./components/color/color.component.md')
         }
     }, {
         path: 'float',
         component: FloatComponent,
         data: {
-            html: require('!!raw-loader!./components/float/float.component.html')
+            html: require('!!raw-loader!./components/float/float.component.html'),
+            doc: require('./components/float/float.component.md')
         }
     }, {
         path: 'forms',
         component: FormsComponent,
         data: {
-            html: require('!!raw-loader!./components/forms/forms.component.html')
+            html: require('!!raw-loader!./components/forms/forms.component.html'),
+            doc: require('./components/forms/forms.component.md')
         }
     }, {
         path: 'grid',
@@ -72,13 +76,15 @@ export const routes: Routes = [{
         path: 'list',
         component: ListComponent,
         data: {
-            html: require('!!raw-loader!./components/list/list.component.html')
+            html: require('!!raw-loader!./components/list/list.component.html'),
+            doc: require('./components/list/list.component.md')
         }
     }, {
         path: 'table',
         component: TableComponent,
         data: {
-            html: require('!!raw-loader!./components/table/table.component.html')
+            html: require('!!raw-loader!./components/table/table.component.html'),
+            doc: require('./components/table/table.component.md')
         }
     }, {
         path: 'text',

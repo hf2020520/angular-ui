@@ -1,5 +1,6 @@
 .row {
     > div {
-        border: 1px solid #ccc
+        border: 1px solid #ccc;
+        white-space: nowrap;
     }
 }
