@@ -9,6 +9,7 @@
 | `disabled`      | `boolean`   |  |
 | `readonly`      | `boolean`   |  |
 | `checked`      | `boolean`   |  |
+| `forId`      | `string` | 用于<label></label>标签的for属性指定的id，当label被点击时，可选中当前的input  |
 | `checkedIcon`      | `string`   | 在选中时候的icon |
 | `uncheckedIcon`      | `string`   |  在未选中时候的icon |
 

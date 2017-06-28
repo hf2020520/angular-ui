@@ -1,26 +1,32 @@
 <doc-view>
   <div>
-    <ui-input [(ngModel)]="checkbox1" type="checkbox" name="checkbox1"></ui-input>
+    <label for="checkbox1">选项1：</label>
+    <ui-input [(ngModel)]="checkbox1" forId="checkbox1" type="checkbox" name="checkbox1"></ui-input>
     {{checkbox1}}
   </div>
   <div>
-    <ui-input [(ngModel)]="checkbox2" class="primary" type="checkbox" name="checkbox2"></ui-input>
+    <label for="checkbox2">选项2：</label>
+    <ui-input [(ngModel)]="checkbox2" forId="checkbox2" type="checkbox" name="checkbox2" class="primary"></ui-input>
     {{checkbox2}}
   </div>
   <div>
-    <ui-input [(ngModel)]="checkbox3" class="info" type="checkbox" name="checkbox3"></ui-input>
+    <label for="checkbox3">选项3：</label>
+    <ui-input [(ngModel)]="checkbox3" forId="checkbox3" type="checkbox" name="checkbox3" class="info"></ui-input>
     {{checkbox3}}
   </div>
   <div>
-    <ui-input [(ngModel)]="checkbox4" class="success" type="checkbox" name="checkbox4"></ui-input>
+    <label for="checkbox4">选项4：</label>
+    <ui-input [(ngModel)]="checkbox4" forId="checkbox4" type="checkbox" name="checkbox4" class="success"></ui-input>
     {{checkbox4}}
   </div>
   <div>
-    <ui-input [(ngModel)]="checkbox5" class="warning" type="checkbox" name="checkbox5"></ui-input>
+    <label for="checkbox5">选项5：</label>
+    <ui-input [(ngModel)]="checkbox5" forId="checkbox5" type="checkbox" name="checkbox5" class="warning"></ui-input>
     {{checkbox5}}
   </div>
   <div>
-    <ui-input [(ngModel)]="checkbox6" class="danger" type="checkbox" name="checkbox6"></ui-input>
+    <label for="checkbox6">选项6：</label>
+    <ui-input [(ngModel)]="checkbox6" forId="checkbox6" type="checkbox" name="checkbox6" class="danger"></ui-input>
     {{checkbox6}}
   </div>
 </doc-view>

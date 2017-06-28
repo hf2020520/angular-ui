@@ -1,11 +1,27 @@
 <doc-view>
   <p>选中结果：{{model}}</p>
   <div>
-    <ui-input [(ngModel)]="model" value="radio1" type="radio" name="radio"></ui-input>
-    <ui-input [(ngModel)]="model" value="radio2" class="primary" type="radio" name="radio"></ui-input>
-    <ui-input [(ngModel)]="model" value="radio3" class="info" type="radio" name="radio"></ui-input>
-    <ui-input [(ngModel)]="model" value="radio4" class="success" type="radio" name="radio"></ui-input>
-    <ui-input [(ngModel)]="model" value="radio5" class="warning" type="radio" name="radio"></ui-input>
-    <ui-input [(ngModel)]="model" value="radio6" class="danger" type="radio" name="radio"></ui-input>
+    <label for="radio1">选项1：</label>
+    <ui-input [(ngModel)]="model" forId="radio1" value="radio1" type="radio" name="radio"></ui-input>
+  </div>
+  <div>
+    <label for="radio2">选项2：</label>
+    <ui-input [(ngModel)]="model" forId="radio2" value="radio2" type="radio" name="radio" class="primary"></ui-input>
+  </div>
+  <div>
+    <label for="radio3">选项3：</label>
+    <ui-input [(ngModel)]="model" forId="radio3" value="radio3" type="radio" name="radio" class="info"></ui-input>
+  </div>
+  <div>
+    <label for="radio4">选项4：</label>
+    <ui-input [(ngModel)]="model" forId="radio4" value="radio4" type="radio" name="radio" class="success"></ui-input>
+  </div>
+  <div>
+    <label for="radio5">选项5：</label>
+    <ui-input [(ngModel)]="model" forId="radio5" value="radio5" type="radio" name="radio" class="warning"></ui-input>
+  </div>
+  <div>
+    <label for="radio6">选项6：</label>
+    <ui-input [(ngModel)]="model" forId="radio6" value="radio6" type="radio" name="radio" class="danger"></ui-input>
   </div>
 </doc-view>
