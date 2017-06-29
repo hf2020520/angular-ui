@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { UiHttp } from 'tanbo-ui';
+
 import { BrowserModule }  from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -12,10 +15,14 @@ import { routes } from './app.routing';
         RouterModule.forRoot(routes),
         BrowserModule,
         BrowserAnimationsModule,
-        UiComponentsModule
+        UiComponentsModule,
+        HttpModule
     ],
     declarations: [
         AppComponent,
+    ],
+    providers: [
+        UiHttp
     ],
     bootstrap: [AppComponent]
 })

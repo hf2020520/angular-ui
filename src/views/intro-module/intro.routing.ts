@@ -12,6 +12,7 @@ import { ListComponent } from './components/list/list.component';
 import { TableComponent } from './components/table/table.component';
 import { TextComponent } from './components/text/text.component';
 import { HelpComponent } from './components/help/help.component';
+import { HttpComponent } from './components/http/http.component';
 
 export const routes: Routes = [{
     path: '',
@@ -97,6 +98,14 @@ export const routes: Routes = [{
         component: HelpComponent,
         data: {
             html: require('!!raw-loader!./components/help/help.component.html')
+        }
+    }, {
+        path: 'http',
+        component: HttpComponent,
+        data: {
+            html: require('!!raw-loader!./components/http/http.component.html'),
+            doc: require('./components/http/http.component.md'),
+            ts: require('!!raw-loader!./components/http/http.component')
         }
     }]
 }];

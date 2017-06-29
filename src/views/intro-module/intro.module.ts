@@ -15,6 +15,7 @@ import { ListComponent } from './components/list/list.component';
 import { TableComponent } from './components/table/table.component';
 import { TextComponent } from './components/text/text.component';
 import { HelpComponent } from './components/help/help.component';
+import { HttpComponent } from './components/http/http.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { HelpComponent } from './components/help/help.component';
         ListComponent,
         TableComponent,
         TextComponent,
-        HelpComponent
+        HelpComponent,
+        HttpComponent
     ]
 })
 export class IntroModule {
